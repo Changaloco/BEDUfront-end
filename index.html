@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,user-scalable=no"
+    />
     <title>Matcha</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,32 +14,65 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <section class="fixed-header">
-      <header class="header">
-        <a class="logo" href="/">
+    <nav class="navbar navbar-expand-lg" style="background-color: #fffbf7">
+      <div class="container-fluid">
+        <a class="navbar-brand logo" href="#">
           <img
             src="https://getmatcha.com/wp-content/uploads/2020/01/Icon-green.png"
             alt="Matcha"
           />
         </a>
-        <nav class="navbar">
-          <ul>
-            <li class="menu-item">Platform</li>
-            <li class="menu-item">Pricing</li>
-            <li class="menu-item">Customers</li>
-            <li class="menu-item">Resources</li>
-            <li class="menu-item">About</li>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Platform</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Precios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Clientes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Recursos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Nosotros</a>
+            </li>
           </ul>
-        </nav>
-        <div class="actions">
-          <a href="">Iniciar Sesion</a>
-          <button>Prueba Gratuita</button>
+
+          <div class="form-inline my-2 my-lg-0 actions justify-content-end">
+            <form action="">
+              <a href="#">Iniciar Sesion</a>
+              <button>Prueba Gratis</button>
+            </form>
+          </div>
         </div>
-      </header>
-    </section>
+      </div>
+    </nav>
+
     <div class="main">
       <div class="content">
         <div class="title">
@@ -60,12 +96,12 @@
             <button type="submit">Probar -></button>
           </form>
         </div>
-        <div class="img-container">
-          <!-- <img
+        <figure class="banner">
+          <img
             src="https://ignos.blog/wp-content/uploads/2021/04/capterra.png"
-            alt="Imagen Capterra"
-          /> -->
-        </div>
+            alt="Capterra"
+          />
+        </figure>
       </div>
     </div>
     <section class="promo">
@@ -204,5 +240,15 @@
         </div>
       </article>
     </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

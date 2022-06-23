@@ -1,6 +1,7 @@
 .title h1{
     text-align: center;
     color:#025157;
+    font-size: 60px;
     font-weight: bold;
 }
 .title p{
@@ -67,14 +68,13 @@ body{
   }
   
   .navbar {
-    width: 70%;
     text-align: center;
-    color: #000000;
-    font-weight: bold;
+    color: #025157;
+    font-weight: 500;
   }
   
   .actions {
-    width: 15%;
+    
     text-align: right;
     font-size: 14px;
     font-weight: 600;
@@ -241,3 +241,75 @@ body{
     margin-top: 0;
     height: 100%;
   }
+
+
+  @media (max-width: 575px) {
+    .navbar,
+    .actions {
+      display: none;
+    }
+  }
+  @media(max-width:575px){
+    .title h1{
+      font-size: 30px;
+  }
+  .main {
+    margin-top: 130px;
+  }
+  }
+
+  @media (max-width: 575px) {
+    .promo{
+      display: block;
+    }
+    .banner  img {
+      width: 100%;
+    }}
+
+    @media (max-width: 575px) {
+      .publish form{
+        flex-direction: column;
+      }
+
+      
+    .publish  form  div {
+      height: 50px;
+      margin-top: 10px;
+    }
+
+    .publish > form  div input {
+      width: 65%;
+    }
+    }
+
+    @media (max-width: 575px) {
+      .promo {
+        flex-direction: column;
+        max-width: 90%;
+      }
+    
+      .explanatory-video  video {
+        width: 100%;
+      }
+    
+      .publish {
+        margin-top: 10px;
+      }
+    
+      .publish  h3 {
+        font-size: 25px;
+        line-height: 1.2;
+      }
+    }
+
+    @media (max-width: 575px) {
+      .features {
+        grid-template: repeat(4, 1fr) / 1fr;
+        padding-left: 0;
+        padding-right: 0;
+      }
+    
+      .feature-image {
+        display: none;
+      }
+    }
