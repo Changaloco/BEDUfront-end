@@ -59,3 +59,77 @@
     color: $light-gray;
   }
 }
+.try-7-days-light {
+  height: 400px;
+  background-color: lightgreen;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.try-big-title {
+  h4 {
+    font-size: 60px;
+    font-weight: bold;
+  }
+}
+.form-7days {
+  form {
+    margin: 20px;
+    button {
+      background-color: $gray;
+      color: $white;
+      border-radius: 10px;
+      outline: none;
+      height: 50px;
+      width: 150px;
+    }
+    input {
+      height: 50px;
+      border-radius: 10px;
+    }
+  }
+}
+.sub-input-text {
+  color: $white;
+  font-weight: bold;
+}
+.try-7-days-dark {
+  margin: 5% 10%;
+  height: 300px;
+  background-color: $gray;
+  .row {
+    height: 100%;
+    width: 100%;
+    .col {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      .title {
+        text-align: center;
+        color: $white;
+        h4 {
+          font-size: 50px;
+        }
+      }
+      .subtitle {
+        text-align: center;
+        color: $white;
+        h6 {
+          span {
+            color: $light-green;
+          }
+        }
+      }
+      .form-7days {
+        form {
+          button {
+            background-color: $light-green;
+          }
+        }
+      }
+    }
+  }
+}
