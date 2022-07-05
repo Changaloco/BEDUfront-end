@@ -127,6 +127,9 @@
         form {
           button {
             background-color: $light-green;
+            &:hover {
+              background-color: $gray;
+            }
           }
         }
       }

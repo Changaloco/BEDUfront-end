@@ -128,5 +128,8 @@
 .try-7-days-dark .row .col .form-7days form button {
   background-color: #67b54b;
 }
+.try-7-days-dark .row .col .form-7days form button:hover {
+  background-color: #4a4a4a;
+}
 
 /*# sourceMappingURL=output.css.map */
